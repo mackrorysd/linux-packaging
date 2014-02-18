@@ -1,0 +1,18 @@
+Source: avro
+Maintainer: Sean Mackrory <mackrorysd@apache.org>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+
+Package: avro
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Apache Avro is a data serialization system
+ Avro provides rich data structures, a compact, fast, binary data format, a
+ container file to store persistent data, remote procedure calls (RPC), and
+ simple integration with dynamic languages. Code generation is not required
+ to read or write data files nor to use or implement RPC protocols. Code
+ generation is an optional optimization, only worth implementing for
+ statically typed languages.
+
