@@ -1,18 +1,41 @@
-Source: avro
+# Copyright 2014 Sean Mackrory
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+Source: httpd
 Maintainer: Sean Mackrory <mackrorysd@apache.org>
 Section: misc
 Priority: optional
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9), libaprutil1-dev
 
-Package: avro
+Package: apachecon
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Apache Avro is a data serialization system
- Avro provides rich data structures, a compact, fast, binary data format, a
- container file to store persistent data, remote procedure calls (RPC), and
- simple integration with dynamic languages. Code generation is not required
- to read or write data files nor to use or implement RPC protocols. Code
- generation is an optional optimization, only worth implementing for
- statically typed languages.
+# Architectures:
+#   any: target host architecture
+#   all: architecture-agnostic
+#   i386 / i686: 32-bit examples
+#   amd64: 64-bit example (RPMs would say x86_64 instead)
+Depends: ${misc:Depends}
+Description: A robust, commercial-grade, featureful, and freely-available open-source HTTP (Web) server.
+ The Apache HTTP Server Project is an effort to develop and maintain an
+ open-source HTTP server for modern operating systems including UNIX and
+ Windows NT. The goal of this project is to provide a secure, efficient and
+ extensible server that provides HTTP services in sync with the current HTTP
+ standards.
 
+Package: apachecon-dev
+Architecture: any
+Depends: apachecon
+Description: Development headers for Apache
+ The development headers for Apache

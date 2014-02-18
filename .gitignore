@@ -1,0 +1,10 @@
+/apachecon_*
+/apachecon-dev_*
+/deb/debian/apachecon*.debhelper.log
+/rpm/BUILD/*
+/rpm/RPMS/*
+/rpm/SOURCES/*.tar.gz
+/rpm/SRPMS/*.src.rpm
+/rpm/repodata/
+/.vagrant
+

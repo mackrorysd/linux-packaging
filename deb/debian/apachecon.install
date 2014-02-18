@@ -1,0 +1,13 @@
+/etc/*
+/usr/share/man/man1/*
+/usr/share/man/man8/*
+/usr/bin/*
+/usr/include/*
+/usr/build
+/usr/lib/i386-linux-gnu/*
+/usr/error
+/usr/manual
+/usr/cgi-bin
+/usr/icons
+/usr/htdocs
+

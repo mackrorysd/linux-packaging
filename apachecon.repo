@@ -1,0 +1,6 @@
+[ApacheCon]
+name=ApacheCon
+enabled=1
+autorefresh=0
+baseurl=file:/home/vagrant/linux-packaging/rpm
+type=rpm-md
